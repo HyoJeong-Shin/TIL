@@ -5,7 +5,7 @@
 
 -------------------------
 
-### Python
+### [Python](https://github.com/HyoJeong-Shin/TIL/tree/master/Python)
 
 ### C
 
