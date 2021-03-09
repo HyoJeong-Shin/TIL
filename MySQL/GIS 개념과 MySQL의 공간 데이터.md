@@ -21,18 +21,23 @@ https://www.google.co.kr/intl/ko/earth/
 ---
 
 ## 공간 데이터 
-지구상에 존재하는 지형정보를 표현한 데이터 (강, 도로, 나무 등 모든 표현물을 디지털 지도 상에 옮겨 놓은 데이터) &nbsp *"디지털 지도 = 수치지도"*
+지구상에 존재하는 지형정보를 표현한 데이터 (강, 도로, 나무 등 모든 표현물을 디지털 지도 상에 옮겨 놓은 데이터)  *"디지털 지도 = 수치지도"*
 
 ### 공간 데이터 구성
 점, 선, 면  3개의 개체로서 표현
+
 ![](https://images.velog.io/images/hyojeong_sss/post/76dd9ec3-b868-407c-a36e-ccaf8663e342/image.png)
 
 ---
 
 ### mysql에서 공간 데이터의 저장 
-![](https://images.velog.io/images/hyojeong_sss/post/049b686a-2e17-45d6-9cb4-823f635484eb/image.png)geometry 타입 : 지도가 파일 단위로 통째로 들어가는 게 아니라, 지도 안에 있는 점, 선, 면이 각각 저장
+![](https://images.velog.io/images/hyojeong_sss/post/049b686a-2e17-45d6-9cb4-823f635484eb/image.png)
 
-![](https://images.velog.io/images/hyojeong_sss/post/3275d4f3-5f8c-4e55-a5c8-baaff872a1cd/image.png)강, 건물 각각이 공간 데이터로 각각 들어감. DB안에서 조회하고 처리 가능
+geometry 타입 : 지도가 파일 단위로 통째로 들어가는 게 아니라, 지도 안에 있는 점, 선, 면이 각각 저장
+
+![](https://images.velog.io/images/hyojeong_sss/post/3275d4f3-5f8c-4e55-a5c8-baaff872a1cd/image.png)
+
+강, 건물 각각이 공간 데이터로 각각 들어감. DB안에서 조회하고 처리 가능
 
 Q) 우리나라에서 가장 큰 건물? 
 A) 건물 크기 알려주는 공간 쿼리 사용, 실제 고급 어플리케이션 없이도 mysql안에서 처리 가능
